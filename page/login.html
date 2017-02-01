@@ -1,0 +1,21 @@
+<div class="container">
+    <center>
+    <img src="logo2.png" class="img-responsive " style="width:300px;">
+    <br>
+    <div class="col-md-4">            
+    </div>
+    <div class="col-md-4">
+        <form class="form-signin">
+            
+            <label for="inputEmail" class="sr-only">Username</label>
+            <input type="text" id="inputEmail" class="form-control" placeholder="Username" required ng-model="inputdata.username">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required ng-model="inputdata.password">        
+            <br>
+            <button class="btn btn-lg btn-primary btn-block" ng-click="doLogin(inputdata)">Login&nbsp;&nbsp;<i class="glyphicon glyphicon-log-in"></i>&nbsp;</button>
+        </form>
+    </div>
+    </center>
+    <div class="col-md-4">            
+    </div>
+</div>

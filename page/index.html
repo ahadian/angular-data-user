@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Welcome</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/heroic-features.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/angular-toastr.css" />
+    <link href="css/ng-table.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <script src="js/angular-route.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/controller/dataController.js" type="text/javascript"></script>
+    <script src="js/controller/authController.js" type="text/javascript"></script>
+    <script src="js/factory/dataFactory.js" type="text/javascript"></script>
+    <script src="js/factory/authFactory.js" type="text/javascript"></script>
+    <script src="js/service/tokenService.js" type="text/javascript"></script>
+    <script src="js/angular-animate.min.js" type="text/javascript"></script>
+    <script src="js/factory/tokenFactory.js" type="text/javascript"></script>
+    <script src="js/angular-toastr.tpls.js"></script>
+    <script src="js/angular-md5.min.js" type="text/javascript"></script>
+    <script src="js/ng-table.min.js" type="text/javascript"></script>
+    <script src="js/ngStorage.min.js" type="text/javascript"></script>
+    <script src="js/directive/dataDirective.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">Data User Angular JS</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--                    <ul class="nav navbar-nav navbar-right">
+                                            <li>
+                                                <a href="#/"><i class="glyphicon glyphicon-home"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#/data">Semua</a>
+                                            </li>
+                                            <li>
+                                                <a href="#/add">Tambah</a>
+                                            </li>                    
+                                            <li><a href="#/login">Login</a></li>
+                                        </ul>-->
+
+                <div ng-if="menuData">
+                    <menu-directive> </menu-directive>
+                </div>
+
+            </div>
+            <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+            <div class="ng-view" class="slide-animation"></div>
+        </header>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Testing - Data Users With AngularJS @2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

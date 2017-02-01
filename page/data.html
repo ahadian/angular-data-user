@@ -1,0 +1,39 @@
+
+<form class="form-inline">
+    <div class="form-group ">                        
+        <a href="#/add" class="btn btn-primary "><i class="glyphicon glyphicon-plus-sign"></i>&nbsp; Tambah Data</a>
+    </div>                                        
+    <div class="form-group pull-right">                                                
+        <input ng-model ="nama" type="text" class="form-control" placeholder="Nama User">
+        <input ng-model ="kota" type="text" class="form-control" placeholder="Kota User">
+    </div>                    
+    <!--    <div class="form-group pull-right">                        
+            Pencarian : &nbsp; 
+            <input ng-model ="nama" type="text" class="form-control" placeholder="Nama User">
+        </div>-->
+
+
+
+</form>   
+<hr>
+<table class="table table-bordered" ng-table="vm.tableParams" show-filter="true">
+        <tr class="info">
+            <th class="text-center">#</th>
+            <th class="text-center">Nama</th>
+            <th class="text-center">Kota</th>
+            <th class="text-center">Aksi</th>
+    
+        </tr>
+        <tr ng-repeat="user in data| filter:nama | filter:kota" ng-animate="'animate'" >
+            <td class="text-center">{{user.id}}</td>
+            <td class="text-center">{{user.nama}}</td>
+            <td class="text-center">{{user.kota}}</td>
+            <td>
+                <center>
+                    <a href="#/data/user/detail/{{user.id}}" class='btn btn-warning'>Detail</a>  
+                    &nbsp;    
+                    <button class="btn btn-danger" ng-click="deleteUserController(user)">Hapus</button>
+                </center>
+            </td>            
+
+</table>
