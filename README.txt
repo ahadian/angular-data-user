@@ -7,3 +7,6 @@ How To :
 NB : 
 1. Web Server yang digunakan adalah AMPPS 
 2. Angular yang digunakan adalah versi 1.5
+
+Info lebih lanjut hubungi : 
+Fb : https://www.facebook.com/toriqpriad
